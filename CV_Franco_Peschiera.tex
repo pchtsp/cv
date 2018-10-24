@@ -1,0 +1,50 @@
+%______________________________________________________________________________________________________________________
+% @brief    LaTeX2e Resume for Kamil K Wojcicki
+% \documentclass[margin,line]{article}
+\documentclass[margin,line]{resume}
+\usepackage[french,english]{babel} 
+ \usepackage[latin1]{inputenc}
+ \usepackage[T1]{fontenc}
+ \usepackage{bibentry}
+ \nobibliography{FrancoPeschiera}
+ % \usepackage{hyperref}
+% \hypersetup{citecolor=DeepPink4}
+% \hypersetup{linkcolor=DarkRed}
+% \hypersetup{urlcolor=DarkBlue}
+% \usepackage{cleveref}
+  % \usepackage[style=authoryear,backend=biber]{biblatex}
+ % \usepackage{bibentry}
+ % \addbibresource{FrancoPeschiera.bib}
+%______________________________________________________________________________________________________________________
+\begin{document}
+% \bibliographystyle{plain}
+% \fontfamily{bch}\selectfont
+\renewcommand{\sectionfont}{}
+
+\bibliographystyle{unsrt}
+
+\name{\Large Franco Peschiera}
+\begin{resume}
+
+	\def\teststring{en}
+	% \nocite{*}
+	% \printbibliography
+	\input{Intro/Intro-\teststring.tex} 
+	\input{Education/Education-\teststring.tex} 
+	\input{Languages/Languages-\teststring.tex} 
+	\input{Experience/Experience-\teststring.tex} 
+	\input{Research/Research-\teststring.tex} 
+	\input{Awards/Awards-\teststring.tex} 
+	\input{eEducation/eEducation-\teststring.tex} 
+	\input{Computers/Computers-\teststring.tex} 
+	\input{Other/Other-\teststring.tex} 
+	\input{Projects/Projects-\teststring.tex} 
+
+\end{resume}
+\end{document}
+
+
+%______________________________________________________________________________________________________________________
+% EOF
+
+
